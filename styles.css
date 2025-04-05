@@ -14,7 +14,7 @@ a {
 
 p {
     text-align: center;
-    font-weight: 900;
+    font-weight: bold;
     color: white;
 }
 .container {
@@ -49,8 +49,8 @@ p {
     gap: 20px;
 }
 
-.header b {
-    font: bold;
+.logo_bhaab {
+    font-weight: 900;
     font-size: 40px;
     filter: invert(1) blur(1.5px);
 }
