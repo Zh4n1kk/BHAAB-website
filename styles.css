@@ -34,9 +34,9 @@ p {
 }
 
 .header a {
-    color: white;
     text-decoration: none;
     transition: 0.2s;
+    filter: invert(1);
 }
 
 .header a:hover {
@@ -45,39 +45,35 @@ p {
 }
 
 .header_nav {
+    color: white;
     display: flex;
     gap: 20px;
 }
 
-.header_nav b {
-    display: flex;
-    color: white;
-}
-
+/* сделать норм инвертирование */
 .header b {
+    display: flex;
     font-weight: 900;
     font-size: 40px;
     filter: invert(1) blur(2px);
     transition: filter 0.5s ease;
-}
+} 
+
 .header b:hover {
     filter: invert(1) blur(0);
 }
 
 #promo_textbottom {
-    display: flex; /* Применяем flex к контейнеру текста */
-  flex-direction: row; /* Элементы будут располагаться в строку (по горизонтали) */
-  color: white; /* Цвет текста */
-  justify-content: space-between; /* Распределяем элементы по ширине */
+    display: contents;
+  color: white; 
   width: 80%; /* Можно задать ширину контейнера */
 }
 
 .promo {
-    width: 100%;
-    display: flex; /* Устанавливаем контейнер как flex-контейнер */
-    justify-content: center; /* Центрируем элементы по горизонтали */
-    align-items: center; /* Центрируем элементы по вертикали */
-    height: 100vh; /* Задаем высоту контейнера */
+    display: flex; 
+    justify-content: center; 
+    align-items: flex-end; 
+    height: 100vh;
     background-image: url(src/promo/bg_promo.jpeg);
     background-size: cover;
 }
