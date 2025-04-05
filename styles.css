@@ -38,12 +38,6 @@ p {
     text-align: center;
 }
 
-/* .bhaab-opener.hidden {
-    opacity: 0;
-    transform: translateY(-100px);
-    pointer-events: none; 
-} */
-
 /* HEADER */
 
 .header {
@@ -102,9 +96,8 @@ p {
 }
 
 .header b {
-    /* opacity: 0; */
     transform: translateX(-400%);
-    transition: all 2.8s ease;
+    transition: all 1s ease;
     filter: invert(1) blur(0px);
 }
 
@@ -137,16 +130,11 @@ p {
     background-size: cover;
 }
 
-/* .promo.visible {
-    opacity: 1; 
-    transform: translateY(0); 
-} */
-
 .promo_logos {
     position: relative; 
     top: 50%;
     left: 50%;
-    transform: translate(-50%,-50%);
+    transform: translate(-50%,-70%);
     width: 1000px;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
