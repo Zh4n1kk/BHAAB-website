@@ -49,9 +49,10 @@ p {
     gap: 20px;
 }
 
-.header img {
-    width: 100px;
-    filter: invert();
+.header b {
+    font: bold;
+    font-size: 40px;
+    filter: invert(1) blur(1.5px);
 }
 
 .header img:hover {
