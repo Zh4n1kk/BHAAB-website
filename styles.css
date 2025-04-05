@@ -11,6 +11,12 @@ body {
 a {
     text-decoration: none;
 }
+
+p {
+    text-align: center;
+    font-weight: 900;
+    color: white;
+}
 .container {
     width: 100%;
 }
