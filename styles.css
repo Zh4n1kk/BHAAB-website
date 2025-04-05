@@ -52,6 +52,7 @@ a {
     width: 900px;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+    align-items: center;
 }
 
 .promo_logos img {
