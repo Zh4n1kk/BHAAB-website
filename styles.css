@@ -55,13 +55,23 @@ p {
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 900px;
+    width: 750px;
     display: grid; 
-    grid-template-columns: repeat(auto-fit, minmax(450px, 2fr));
+    grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
     align-items: center;
 }
 
-.promo_logos img {
-    width: 450px;
+.promo_logos_element {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+}
+
+.promo_logos_element img {
+    height: 400px;
+    width: 350px;
+    object-fit: contain;
 }
 
