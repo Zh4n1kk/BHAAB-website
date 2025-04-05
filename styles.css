@@ -22,6 +22,28 @@ p {
     width: 100%;
 }
 
+/* OPENER */
+
+.bhaab-opener {
+    height: 100vh;
+    background-color: black;
+    color: white;
+}
+
+.bhaab-opener h1 {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+/* .bhaab-opener.hidden {
+    opacity: 0;
+    transform: translateY(-100px);
+    pointer-events: none; 
+} */
+
 /* HEADER */
 
 .header {
@@ -40,6 +62,7 @@ p {
     text-decoration: none;
     transition: 0.2s;
     filter: invert(1);
+    color: black;
 }
 
 .header a:hover {
@@ -53,6 +76,12 @@ p {
     gap: 20px;
 }
 
+.header_logo {
+    text-align: center;
+    font-size: 48px;
+    position: sticky;
+    display: none;
+}
 /* сделать норм инвертирование */
 .header b {
     display: flex;
@@ -66,13 +95,38 @@ p {
     filter: invert(1) blur(0);
 }
 
-#promo_textbottom {
-    display: contents;
-  color: white; 
-  width: 80%; /* Можно задать ширину контейнера */
+.header_nav {
+    opacity: 0;
+    transform: translateX(500px);
+    transition: 2s;
+}
+
+.header b {
+    /* opacity: 0; */
+    transform: translateX(-400%);
+    transition: all 2.8s ease;
+    filter: invert(1) blur(0px);
+}
+
+.header_nav.animate-in {
+    transform: translateX(0px);
+    opacity: 1;
+}
+
+.header b.animate-in {
+    transform: translateX(0px);
+    opacity: 1;
+    filter: invert(1) blur(2.5px);
 }
 
 /* PROMO */
+
+.promo_textbottom {
+    color: white; 
+    width: 80%; /* Можно задать ширину контейнера */
+    position: absolute;
+    padding-bottom:50px;
+}
 
 .promo {
     display: flex; 
@@ -83,12 +137,17 @@ p {
     background-size: cover;
 }
 
+/* .promo.visible {
+    opacity: 1; 
+    transform: translateY(0); 
+} */
+
 .promo_logos {
-    position: absolute;
+    position: relative; 
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    width: 750px;
+    width: 1000px;
     display: grid; 
     grid-template-columns: repeat(auto-fit, minmax(350px, 2fr));
     align-items: center;
@@ -158,4 +217,11 @@ p {
 
 .flex-row {
     display: flex;
+}
+
+.center {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
 }
