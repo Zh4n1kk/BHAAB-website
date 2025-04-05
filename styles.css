@@ -49,14 +49,14 @@ p {
     gap: 20px;
 }
 
-.logo_bhaab {
+.header b {
     font-weight: 900;
     font-size: 40px;
-    filter: invert(1) blur(1.5px);
+    filter: invert(1) blur(2px);
+    transition: filter 0.5s ease;
 }
-
-.header img:hover {
-    filter: blur();
+.header b:hover {
+    filter: invert(1) blur(0); /* Фильтр при наведении, чтобы он возвращался к нормальному состоянию */
 }
 .promo {
     width: 100%;
