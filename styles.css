@@ -59,10 +59,7 @@ p {
     color: black;
 }
 
-.header a:hover {
-    color: rgb(188, 188, 188);
-    transition: 0.2s;
-}
+
 
 .header_nav {
     color: white;
@@ -85,7 +82,12 @@ p {
     transition: filter 0.5s ease;
 } 
 
-.header b:hover {
+.header-nav a:hover {
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
+.header b.animate-in:hover {
     filter: invert(1) blur(0);
 }
 
@@ -153,6 +155,13 @@ p {
     height: 400px;
     width: 350px;
     object-fit: contain;
+    transform: rotateY(0deg);
+    transition: 5s;
+}
+
+.promo_logos_element:hover {
+    transform: rotateY(900deg);
+    transition: 15s;
 }
 
 /* CONTENT-SECTION */
@@ -177,6 +186,7 @@ p {
     text-align: left;
     font-weight: 500;
     width: 360px;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .content-section_list {
     max-width: 900px;
