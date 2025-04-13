@@ -17,13 +17,14 @@ document.addEventListener('DOMContentLoaded', () => {
 
         const headerTextColor = document.querySelector('.header b')
         const headerNavColor = document.querySelectorAll('.header_nav a')
-        const contentSection = document.querySelector('.content-section')
-        // console.log(scrollY)
-        if (scrollY > 1689) {
-            headerTextColor.style.color = 'white'
+        if (scrollY < 1663) {
+            headerTextColor.style.color = 'black';
+            headerNavColor.forEach(element => element.style.color = 'black');
+        } else if (scrollY >= 1663 && scrollY < 2814) {
+            headerTextColor.style.color = 'white';
             headerNavColor.forEach(element => element.style.color = 'white');
-        } else if (scrollY < 1689) {
-            headerTextColor.style.color = 'black'
+        } else if (scrollY >= 2814) {
+            headerTextColor.style.color = 'black';
             headerNavColor.forEach(element => element.style.color = 'black');
         }
     });
