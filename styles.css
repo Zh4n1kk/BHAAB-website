@@ -207,8 +207,6 @@ a {
 /* PARTICIPANTS */
 
 .participants{
-    display: flex;
-    flex-direction: row;
     background-image: url("src/participants/participant_bg.jpg");
     background-size: cover;
 }
@@ -216,28 +214,42 @@ a {
     color: white;
 }
 
-
-.participants_top-line {
-    padding: 50px 0 800px 0;
-}
 .participants p {
     color: white;
     font-weight: 600;
 }
-.participants_list_wrapper {
-    width: 80%;
-    margin: 0 auto;
-}
+
 .participants_list {
     width: 180px;
     align-items: flex-start;
 }
 
-.year_p {
-    position: relative;
-    left: 60px;
-    padding-bottom: 50px;
+/* PARIS */
+.paris_info {
+    background-color: white;
+    align-items: center;
 }
+.paris_info p {
+    color: black;
+    font-weight: 500;
+}
+.paris_photo {
+    align-items: center;
+    grid-template-columns: 1fr 1fr; /* Картинка занимает свою ширину, текст — оставшееся пространство */
+    gap: 90px;
+}
+.paris_photo img {
+    position: relative;
+    width: 100%;
+}
+.paris_photo_desc {
+    text-align: center;
+}
+.top-line_paris p {
+    padding: 35px 0px 10px;
+    font-weight: 900;
+}
+
 /* INSTRUMENTS */
 
 /* Обязательно должен быть либо flex-col либо flex-row для работы флекс стилей! */
@@ -252,6 +264,25 @@ a {
 
 .space-between {
     justify-content: space-between;
+}
+.wrapper {
+    width: 80%;
+    margin: 0 auto;
+}
+/* рэпер на верхний и нижний текст */
+.wrapper-tb {
+    width: 93%;
+    margin: 0 auto;
+}
+
+.grid {
+    display: grid;
+}
+.top-line {
+    padding: 50px 0 800px 0;
+}
+.top-line p{
+    font-weight: 900;
 }
 
 .gap-5px {
@@ -277,11 +308,18 @@ a {
 .gap-45px {
     gap: 45px;
 }
+
 /* Конец раздела display: flex */
 .center {
     position: relative;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
+}
+/* Текст го(й)да снизу страницы */
+.year_p {
+    font-weight: 900;
+    position: relative;
+    padding: 30px 0px 50px 50px;
 }
 
