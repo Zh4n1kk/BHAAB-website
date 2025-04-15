@@ -212,12 +212,17 @@ a {
     background-image: url("src/participants/participant_bg.jpg");
     background-size: cover;
 }
+.participants h2{
+    color: white;
+}
+
 
 .participants_top-line {
-    padding: 20px 0 800px 0;
+    padding: 50px 0 800px 0;
 }
 .participants p {
     color: white;
+    font-weight: 600;
 }
 .participants_list_wrapper {
     width: 80%;
@@ -228,9 +233,9 @@ a {
     align-items: flex-start;
 }
 
-.participants_p {
+.year_p {
     position: relative;
-    /*left: 40px;*/
+    left: 60px;
     padding-bottom: 50px;
 }
 /* INSTRUMENTS */
@@ -256,7 +261,7 @@ a {
 .gap-10 {
     gap: 10px;
 }
-
+ 
 .gap-15px {
     gap: 15px;
 }
