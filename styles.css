@@ -216,7 +216,6 @@ a {
 
 .participants p {
     color: white;
-    font-weight: 600;
 }
 
 .participants_list {
@@ -231,22 +230,65 @@ a {
 }
 .paris_info p {
     color: black;
-    font-weight: 500;
 }
+
 .paris_photo {
     align-items: center;
     grid-template-columns: 1fr 1fr; /* Картинка занимает свою ширину, текст — оставшееся пространство */
     gap: 90px;
 }
+
+.paris-photo-text p {
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.paris-photo-text {
+    padding: 100px;
+}
+
 .paris_photo img {
     position: relative;
     width: 100%;
+    height: 100%;
+    background-size: cover;
 }
 .paris_photo_desc {
     text-align: center;
 }
 .top-line_paris p {
     padding: 35px 0px 10px;
+    font-weight: 900;
+}
+.paris-bottom {
+    align-items: top;
+}
+.paris-bottom img{
+    width: 100px;
+    height: 30px;
+    object-position: center;
+}
+
+/* PARIS CAVE */
+
+.paris-cave {
+    width: 100%;
+    height: 100%;
+    background-image: url("src/content-section/paris2.jpg");
+    background-size: cover;
+    background-position: center;
+}
+.paris-cave p{
+    color: white;
+}
+.paris-cave-text {
+    padding: 300px 950px 300px 0px;
+}
+.paris-cave-text p{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+.top-line-paris{
+    padding: 50px 0 0 0;
     font-weight: 900;
 }
 
@@ -320,6 +362,8 @@ a {
 .year_p {
     font-weight: 900;
     position: relative;
-    padding: 30px 0px 50px 50px;
+    padding: 15px 0px 30px 0px;
 }
-
+.boldtext {
+    font-weight: 600;
+}
