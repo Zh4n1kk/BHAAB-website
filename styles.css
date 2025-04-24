@@ -153,13 +153,13 @@ a {
     height: 400px;
     width: 350px;
     object-fit: contain;
-    transform: rotateY(0deg);
-    transition: 5s;
+    filter: invert(0);
+    transition: 0s;
 }
 
-.promo_logos_element:hover {
-    transform: rotateY(900deg);
-    transition: 15s;
+.promo_logos_element img:hover {
+ filter: invert(1);
+    transition: 1s;
 }
 
 /* CONTENT-SECTION */
