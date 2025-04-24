@@ -243,7 +243,7 @@ a {
     font-family: Arial, Helvetica, sans-serif;
 }
 .paris-photo-text {
-    padding: 100px;
+    padding: 55px;
 }
 
 .paris_photo img {
@@ -259,9 +259,6 @@ a {
     padding: 35px 0px 10px;
     font-weight: 900;
 }
-.paris-bottom {
-    align-items: top;
-}
 .paris-bottom img{
     width: 100px;
     height: 30px;
@@ -270,8 +267,6 @@ a {
 
 /* PARIS CAVE */
 .paris-cave-info{
-    width: 100%;
-    height: 100%;
     background-image: url("src/content-section/paris3.jpg");
     background-size: cover;
     background-position: center;
@@ -290,7 +285,7 @@ color: white;
     color: white;
 }
 .paris-cave-text {
-    padding: 300px 700px 300px 0px;
+    padding: 300px 660px 300px 0px;
 }
 .paris-cave-text p{
     font-family: Arial, Helvetica, sans-serif;
@@ -299,6 +294,35 @@ color: white;
 .top-line-paris{
     padding: 50px 0 0 0;
     font-weight: 900;
+}
+.paris-bottom {
+    padding: 20px 0px 20px 0px;
+    align-items: top;
+}
+/* PARIS-TY */
+.paris-thankyou{
+    background-image: url("src/content-section/paris4.jpg");
+    background-size: cover;
+    background-position-y: -670px;
+}
+.paris-thankyou p{
+    color: white;
+}
+/* PARIS FINAL */
+.paris-final {
+    padding: 65px;
+}
+.paris-final img{
+    width: 550px;
+    height: 300px;
+    object-fit: contain;
+    align-self: center;
+}
+.paris-final p{
+    font-family: SANS-SERIF;
+    FONT-SIZE: 20px;
+    FONT-WEIGHT: 700;
+    padding: 15px 250px 0px 250px;
 }
 
 /* INSTRUMENTS */
@@ -323,6 +347,10 @@ color: white;
 /* рэпер на верхний и нижний текст */
 .wrapper-tb {
     width: 93%;
+    margin: 0 auto;
+}
+.wrapper-text {
+    width: 60%;
     margin: 0 auto;
 }
 
@@ -375,4 +403,10 @@ color: white;
 }
 .boldtext {
     font-weight: 600;
+}
+.padding-900 {
+    padding: 900px 0px 0px 0px;
+}
+.padding-60 {
+    padding: 60px;
 }
